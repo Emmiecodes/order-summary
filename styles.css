@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:  hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+    background-color: hsl(225, 100%, 94%); 
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;;
+}
+
+main {
+    max-width: 500px;
+    max-height: 100%;
+}
+
+.Order-summary {
+background-color: white;
+border-radius: 2rem;
+width: 90%;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.Order-summary__p, .subscription__p, .Order-summary__cancel {
+    color: hsl(224, 23%, 55%);
+}
+
+img {
+border-top-left-radius: 2rem;
+border-top-right-radius: 2rem;
+}
+
+h1, .Order-summary__p, .Order-summary__subscription, 
+.Order-summary__proceed, .Order-summary__cancel 
+{
+    margin: 1.5rem 1rem 0 1rem;
+}
+
+.Order-summary__subscription {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+/* Not sure is thats a right BEM notation */ 
+.Order-summary__subscription--column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.change {
+color: hsl(245, 75%, 52%);
+font-weight: 900;
+}
+
+.change:hover {
+    color: hsl(263, 66%, 64%);
+}
+
+.Order-summary__proceed {
+    background-color:hsl(245, 75%, 52%);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.Order-summary__proceed:hover {
+    background-color: hsl(263, 66%, 64%);
+}
+.Order-summary__cancel {
+    background-color: white;
+    font-weight: 900;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.Order-summary__cancel:hover {
+    color:hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 480px) {
+
+ .Order-summary {
+    max-width: 100%;
+ }
+
+ img {
+    max-width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+ }
+}
