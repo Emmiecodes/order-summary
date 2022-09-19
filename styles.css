@@ -60,7 +60,8 @@ h1, .Order-summary__p, .Order-summary__subscription,
     padding: 1rem;
     align-items: center;
 }
-/* Not sure is thats a right BEM notation */ 
+/* Not sure if thats a right BEM notation since column isn't a mutation
+ */ 
 .Order-summary__subscription--column {
     display: flex;
     flex-direction: column;
