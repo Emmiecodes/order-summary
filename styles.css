@@ -53,7 +53,7 @@ border-top-left-radius: 2rem;
 border-top-right-radius: 2rem;
 }
 
-h1, .Order-summary__p, .Order-summary__subscription, 
+.Order-summary__H1, .Order-summary__p, .Order-summary__subscription, 
 .Order-summary__proceed, .Order-summary__cancel 
 {
     margin: 1.5rem 1rem 0 1rem;
