@@ -22,6 +22,12 @@ body {
     background-repeat: no-repeat;;
 }
 
+
+a:focus {
+outline:0.25rem solid hsl(263, 66%, 64%);
+outline-offset: 0.5rem;
+}
+
 main {
     max-width: 500px;
     max-height: 100%;
@@ -38,7 +44,7 @@ align-items: center;
 text-align: center;
 }
 
-.Order-summary__p, .subscription__p, .Order-summary__cancel {
+.Order-summary__p, .subscription__price, .Order-summary__cancel {
     color: hsl(224, 23%, 55%);
 }
 
@@ -62,24 +68,24 @@ h1, .Order-summary__p, .Order-summary__subscription,
 }
 /* Not sure if thats a right BEM notation since column isn't a mutation
  */ 
-.Order-summary__subscription--column {
+.subscription__column {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
     align-items: center;
 }
 
-h2 {
+.subscription__plan {
     font-size: 1rem;
     margin-bottom: 0.25rem;
 }
 
-.change {
+.subscription__change {
 color: hsl(245, 75%, 52%);
 font-weight: 900;
 }
 
-.change:hover {
+.subscription__change:hover {
     color: hsl(263, 66%, 64%);
 }
 
